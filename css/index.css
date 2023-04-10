@@ -1,0 +1,364 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.root {
+  transition: all 0.2s;
+  width: 100%;
+}
+.root .max-width {
+  max-width: 1290px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.root .bg-img {
+  background-image: url("https://ordinarytraveler.com/wp-content/uploads/2022/12/background-1.png");
+  margin-bottom: 20px;
+}
+.root .iconfont {
+  font-size: 22px;
+}
+.root .nav {
+  width: 100%;
+  height: 50px;
+  background-color: #bfe6f7;
+}
+@media (max-width: 1000px) {
+  .root .nav {
+    display: none;
+  }
+}
+.root .nav .nav_content {
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+}
+.root .nav .nav_content .nav_content_left_menu {
+  height: 60px;
+}
+.root .nav .nav_content .nav_content_left_menu ul {
+  display: flex;
+  gap: 30px;
+}
+.root .nav .nav_content .nav_content_left_menu ul li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.root .nav .nav_content .nav_content_left_menu ul li .active {
+  color: #b00b0b;
+}
+.root .mobile_nav {
+  height: 80px;
+  line-height: 80px;
+  display: flex;
+  display: none;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid #eee;
+}
+@media (max-width: 1000px) {
+  .root .mobile_nav {
+    display: flex;
+  }
+}
+.root .mobile_nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.root .mobile_nav img {
+  height: 35px;
+}
+.root .site_header_img {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px 30px 20px;
+}
+@media (max-width: 1000px) {
+  .root .site_header_img {
+    display: none;
+  }
+}
+.root .site_header_img img {
+  max-width: 550px;
+}
+.root .site_header_menu {
+  padding: 15px 30px 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 80px;
+  line-height: 50px;
+}
+@media (max-width: 1000px) {
+  .root .site_header_menu {
+    display: none;
+  }
+}
+.root .site_header_menu .site_header_menu_list ul {
+  display: flex;
+  gap: 30px;
+}
+.root .site_header_menu .site_header_menu_list ul li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.root .site_header_menu .site_header_menu_list ul li .active {
+  color: #b00b0b;
+}
+.root .site_header_menu .site_header_menu_subscribe .subscribe_btn {
+  border-radius: 50px 50px 50px 50px;
+  color: #ffffff;
+  background: #b00b0b;
+  border: 2px none transparent;
+  box-shadow: 0px 0px 0px -7px rgba(0, 0, 0, 0);
+  padding: 7px 20px 7px 20px;
+}
+.root .site_content_next,
+.root .site_content_top {
+  background-color: #faf7f6;
+  padding: 25px;
+  text-align: center;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.root .site_content_next .site_content_top_title h1,
+.root .site_content_top .site_content_top_title h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.root .site_content_next .site_content_top_subtitle h2,
+.root .site_content_top .site_content_top_subtitle h2 {
+  line-height: 30px;
+  font-size: 24px;
+}
+.root .site_content_next .site_content_top_image_text,
+.root .site_content_top .site_content_top_image_text {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  animation: reversal 0.2s;
+}
+.root .site_content_next .site_content_top_image_text a,
+.root .site_content_top .site_content_top_image_text a {
+  display: inline-block;
+  background-image: url("https://ordinarytraveler.com/wp-content/uploads/2023/01/packing-tips.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  height: 400px;
+  width: 23%;
+  padding-top: 330px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1000px) {
+  .root .site_content_next .site_content_top_image_text a,
+  .root .site_content_top .site_content_top_image_text a {
+    width: 48%;
+  }
+}
+@media (max-width: 750px) {
+  .root .site_content_next .site_content_top_image_text a,
+  .root .site_content_top .site_content_top_image_text a {
+    width: 100%;
+  }
+}
+.root .site_content_next .site_content_top_image_text a h3,
+.root .site_content_top .site_content_top_image_text a h3 {
+  bottom: 20px;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 25px;
+  background-color: #b00b0b;
+  color: #fff;
+  padding: 15px;
+}
+.root .site_content_next .site_content_next-title {
+  padding: 25px 0;
+  display: flex;
+}
+.root .site_content_next .site_content_next-title .title {
+  padding: 0 100px;
+  font-size: 26px;
+  font-weight: 600;
+}
+.root .site_content_next .site_content_next-title .line {
+  flex: 1;
+}
+.root .site_content_next .site_content_next_post {
+  display: flex;
+  justify-content: space-between;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (max-width: 1000px) {
+  .root .site_content_next .site_content_next_post {
+    flex-direction: column;
+  }
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———left {
+  width: 650px;
+  overflow: hidden;
+}
+@media (max-width: 1000px) {
+  .root .site_content_next .site_content_next_post .site_content_next_post———left {
+    width: 100%;
+  }
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———left .site_content_next_post-card {
+  display: block;
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———left .site_content_next_post-card img {
+  height: 390px;
+  width: 100%;
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———left .site_content_next_post-card .site_content_next_post———left-info {
+  margin-left: 10%;
+  width: 80%;
+  position: relative;
+  top: -20px;
+  background: #ffffff;
+  padding: 20px;
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———left .site_content_next_post-card .site_content_next_post———left-info .site_content_next_post———left-info_title h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———left .site_content_next_post-card .site_content_next_post———left-info .site_content_next_post———left-info_subtitle h2 {
+  line-height: 40px;
+  font-size: 24px;
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———right {
+  width: 550px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+@media (max-width: 1000px) {
+  .root .site_content_next .site_content_next_post .site_content_next_post———right {
+    width: 100%;
+  }
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———right article {
+  display: flex;
+  text-align: left;
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———right article img {
+  width: 180px;
+  height: 120px;
+  padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———right article .site_content_next_post———right_info h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———right article .site_content_next_post———right_info .site_content_next_post———right_info_date {
+  color: #667;
+  line-height: 40px;
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———right article .site_content_next_post———right_info .site_content_next_post———right_info_read_more span {
+  color: #444;
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———bottom {
+  background: #fff;
+  width: 80%;
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———bottom article {
+  margin-bottom: 30px;
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———bottom article img {
+  width: 249px;
+  height: 180px;
+}
+.root .site_content_next .site_content_next_post .site_content_next_post———bottom article .site_content_next_post———right_info_des {
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.root .get_more_inspiration {
+  height: 561px;
+  background-image: url("https://ordinarytraveler.com/wp-content/uploads/2023/02/Adventure-Travel-Blog-2.webp");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.root .get_more_inspiration .get_more_inspiration_send_message {
+  text-align: center;
+  width: 550px;
+  height: 400px;
+  padding-top: 40px;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.root .get_more_inspiration .get_more_inspiration_send_message .get_more_inspiration_send_message__title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.root .get_more_inspiration .get_more_inspiration_send_message .get_more_inspiration_send_message__des {
+  font-size: 22px;
+  padding: 30px 0;
+}
+.root .get_more_inspiration .get_more_inspiration_send_message input {
+  padding-left: 20px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+}
+.root .get_more_inspiration .get_more_inspiration_send_message button {
+  height: 50px;
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  border: none;
+  background: #b00b0b;
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.root .footer {
+  background: none;
+  margin: 50px 0;
+}
+.root .footer .nav_content {
+  border-top: 2px solid #111111;
+  padding: 20px 0;
+}
+.root .footer .nav_content .nav_content_left_menu {
+  font-size: 20px;
+}
+.root .bg_white {
+  background-color: #ffffff;
+}
+
+@keyframes reversal {
+  from {
+    transform: perspective(400px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(400px) rotateY(180deg);
+  }
+}/*# sourceMappingURL=index.css.map */
