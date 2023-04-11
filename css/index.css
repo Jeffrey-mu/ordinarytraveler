@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+  transition: all 0.2s;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -615,4 +619,8 @@ a {
   text-align: center;
 }
 
-@keyframes reversal {}/*# sourceMappingURL=index.css.map */
+@keyframes reversal {}
+.icon-backtop {
+  font-size: 50px !important;
+  color: #b00b0b;
+}/*# sourceMappingURL=index.css.map */

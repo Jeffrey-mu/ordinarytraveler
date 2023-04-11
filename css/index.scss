@@ -2,7 +2,9 @@ $max-width: 1290px;
 $nav-bg-color: #bfe6f7;
 $nav-height: 50px;
 $iconfont-size: 22px;
-
+* {
+  transition: all .2s;
+}
 @mixin display-none {
   @media (max-width: 1000px) {
     display: none;
@@ -703,6 +705,7 @@ a {
   .center {
     text-align: center;
   }
+
 }
 
 @keyframes reversal {
@@ -714,3 +717,7 @@ a {
   //       transform: perspective(400px) rotateY(180deg);
   //     }
 }
+ .icon-backtop {
+   font-size: 50px !important;
+   color: #b00b0b;
+ }
