@@ -12,6 +12,24 @@ a {
   transition: all 0.2s;
   width: 100%;
 }
+.root .contentDetails {
+  max-width: 1290px;
+  margin: auto;
+  padding: 40px !important;
+  box-sizing: border-box;
+}
+.root .contentDetails p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+}
+.root .contentDetails h1,
+.root .contentDetails h3,
+.root .contentDetails h2 {
+  margin: 20px;
+}
 .root .max-width {
   max-width: 1290px;
   margin: auto;
@@ -20,9 +38,6 @@ a {
 .root .bg-img {
   background-image: url("../images/background.png");
   margin-bottom: 20px;
-}
-.root .iconfont {
-  font-size: 22px;
 }
 .root .nav {
   width: 100%;
@@ -33,6 +48,9 @@ a {
   .root .nav {
     display: none;
   }
+}
+.root .nav .iconfont {
+  font-size: 25px;
 }
 .root .nav .nav_content {
   display: flex;
@@ -56,6 +74,18 @@ a {
 .root .nav .nav_content .nav_content_left_menu ul li .active {
   color: #b00b0b;
 }
+.root .nav .nav_content .nav_content_right_icon .header-social-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.root .nav .nav_content .nav_content_right_icon .header-social-wrap a {
+  padding-top: 7px;
+}
+.root .nav .nav_content .nav_content_right_icon .header-social-wrap a svg {
+  width: 25px;
+  height: 25px;
+}
 .root .mobile_header {
   height: 80px;
   line-height: 80px;
@@ -65,10 +95,23 @@ a {
   padding: 0 30px;
   border-bottom: 1px solid #eee;
 }
+.root .mobile_header .iconfont {
+  font-size: 30px;
+}
 @media (max-width: 1000px) {
   .root .mobile_header {
     display: flex;
   }
+}
+.root .mobile_header .mobile_header_img_box {
+  position: relative;
+}
+.root .mobile_header .mobile_header_img_box .website_name {
+  top: -3px;
+  font-size: 25px;
+  font-weight: 600;
+  position: absolute;
+  font-family: fantasy;
 }
 .root .mobile_header div {
   display: flex;
@@ -76,7 +119,7 @@ a {
   align-items: center;
 }
 .root .mobile_header img {
-  height: 35px;
+  height: 40px;
 }
 .root .mobile_menu {
   width: 0vw;
@@ -100,6 +143,10 @@ a {
   padding-right: 30px;
   border-bottom: 1px solid #b00b0b;
 }
+.root .mobile_menu .mobile_menu_content .mobile_menu-close .close {
+  font-size: 40px;
+  color: #b00b0b;
+}
 .root .mobile_menu .mobile_menu_content ul {
   padding: 20px 40px;
 }
@@ -120,6 +167,7 @@ a {
   display: flex;
   justify-content: center;
   padding: 30px 20px 30px 20px;
+  position: relative;
 }
 @media (max-width: 1000px) {
   .root .site_header_img {
@@ -128,6 +176,13 @@ a {
 }
 .root .site_header_img img {
   max-width: 550px;
+}
+.root .site_header_img .website_name {
+  top: 50px;
+  font-size: 40px;
+  font-weight: 600;
+  position: absolute;
+  font-family: fantasy;
 }
 .root .site_header_menu {
   padding: 15px 30px 15px 30px;
@@ -172,6 +227,10 @@ a {
   text-align: center;
   height: -moz-fit-content;
   height: fit-content;
+}
+.root .site_content_next .site_content_top_title,
+.root .site_content_top .site_content_top_title {
+  margin-bottom: 20px;
 }
 .root .site_content_next .site_content_top_title h1,
 .root .site_content_top .site_content_top_title h1 {
@@ -327,7 +386,6 @@ a {
 }
 .root .site_content_next .site_content_next_post .site_content_next_post———ads {
   width: 300px;
-  background-color: red;
 }
 @media (max-width: 1000px) {
   .root .site_content_next .site_content_next_post .site_content_next_post———ads {
@@ -351,8 +409,13 @@ a {
     flex-direction: column;
   }
 }
+@media (max-width: 1000px) {
+  .root .site_content_next .site_content_next_post .site_content_next_post———bottom a {
+    flex-direction: column;
+  }
+}
 .root .site_content_next .site_content_next_post .site_content_next_post———bottom a img {
-  width: 249px;
+  width: 40%;
 }
 @media (max-width: 1000px) {
   .root .site_content_next .site_content_next_post .site_content_next_post———bottom a img {
@@ -417,6 +480,9 @@ a {
   padding: 30px 0;
   overflow: hidden;
 }
+.root .channel_list .channel_list_center .channel_list_title {
+  margin-bottom: 30px;
+}
 .root .channel_list .channel_list_center .channel_list_cards {
   padding: 30px;
   flex-wrap: wrap;
@@ -459,7 +525,6 @@ a {
   font-weight: 600;
 }
 .root .footer {
-  background: none;
   margin: 50px 0;
 }
 .root .footer .nav_content {
@@ -467,6 +532,7 @@ a {
   padding: 20px 0;
 }
 .root .footer .nav_content .nav_content_left_menu {
+  text-align: center;
   font-size: 20px;
 }
 .root .detail_content {
@@ -635,6 +701,22 @@ a {
 }
 .root .center {
   text-align: center;
+}
+
+.text_30 {
+  font-size: 30px;
+}
+
+.text_22 {
+  font-size: 22px;
+}
+
+.text_16 {
+  font-size: 16px;
+}
+
+.text_40 {
+  font-size: 40px;
 }
 
 @keyframes reversal {}

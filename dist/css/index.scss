@@ -1,7 +1,8 @@
 $max-width: 1290px;
 $nav-bg-color: #bfe6f7;
 $nav-height: 50px;
-$iconfont-size: 22px;
+$iconfont-size: 30px;
+$share-iconfont-size: 25px;
 
 * {
   transition: all .2s;
@@ -73,6 +74,26 @@ a {
   transition: all .2s;
   width: 100%;
 
+  .contentDetails {
+    max-width: $max-width;
+    margin: auto;
+    padding: 40px !important;
+    box-sizing: border-box;
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    h1,
+    h3,
+    h2 {
+      margin: 20px;
+    }
+  }
+
   .max-width {
     max-width: $max-width;
     margin: auto;
@@ -84,15 +105,16 @@ a {
     margin-bottom: 20px;
   }
 
-  .iconfont {
-    font-size: $iconfont-size;
-  }
 
   .nav {
     width: 100%;
     height: $nav-height;
     background-color: $nav-bg-color;
     @include display-none;
+
+    .iconfont {
+      font-size: $share-iconfont-size;
+    }
 
     .nav_content {
 
@@ -105,7 +127,23 @@ a {
         @include menu-style;
       }
 
-      .nav_content_right_icon {}
+      .nav_content_right_icon {
+        .header-social-wrap {
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+
+          a {
+            padding-top: 7px;
+
+            svg {
+              width: 25px;
+              height: 25px;
+            }
+          }
+
+        }
+      }
     }
   }
 
@@ -118,8 +156,24 @@ a {
     padding: 0 30px;
     border-bottom: 1px solid #eee;
 
+    .iconfont {
+      font-size: $iconfont-size;
+    }
+
     @media (max-width: 1000px) {
       display: flex;
+    }
+
+    .mobile_header_img_box {
+      position: relative;
+
+      .website_name {
+        top: -3px;
+        font-size: 25px;
+        font-weight: 600;
+        position: absolute;
+        font-family: fantasy;
+      }
     }
 
     div {
@@ -129,7 +183,7 @@ a {
     }
 
     img {
-      height: 35px
+      height: 40px
     }
   }
 
@@ -154,6 +208,11 @@ a {
         text-align: right;
         padding-right: 30px;
         border-bottom: 1px solid #b00b0b;
+
+        .close {
+          font-size: 40px;
+          color: #b00b0b;
+        }
       }
 
       ul {
@@ -182,9 +241,18 @@ a {
     display: flex;
     justify-content: center;
     padding: 30px 20px 30px 20px;
+    position: relative;
 
     img {
       max-width: 550px;
+    }
+
+    .website_name {
+      top: 50px;
+      font-size: 40px;
+      font-weight: 600;
+      position: absolute;
+      font-family: fantasy;
     }
   }
 
@@ -224,6 +292,7 @@ a {
     height: fit-content;
 
     .site_content_top_title {
+      margin-bottom: 20px;
       h1 {
         font-size: 40px;
         font-weight: 600;
@@ -378,7 +447,6 @@ a {
 
       .site_content_next_post———ads {
         width: 300px;
-        background-color: red;
         @include mobile_width-100;
       }
 
@@ -390,9 +458,9 @@ a {
         a {
           margin-bottom: 30px;
           @include flex_col-750;
-
+          @include flex_col;
           img {
-            width: 249px;
+            width: 40%;
             // height: 180px;
             @include mobile_width-100;
           }
@@ -467,7 +535,9 @@ a {
       padding: 30px 0;
       overflow: hidden;
 
-      .channel_list_title {}
+      .channel_list_title {
+        margin-bottom: 30px;
+      }
 
       .channel_list_cards {
         padding: 30px;
@@ -514,7 +584,6 @@ a {
   }
 
   .footer {
-    background: none;
     margin: 50px 0;
 
     .nav_content {
@@ -522,6 +591,7 @@ a {
       padding: 20px 0;
 
       .nav_content_left_menu {
+        text-align: center;
         font-size: 20px;
       }
     }
@@ -730,6 +800,22 @@ a {
     text-align: center;
   }
 
+}
+
+.text_30 {
+  font-size: 30px;
+}
+
+.text_22 {
+  font-size: 22px;
+}
+
+.text_16 {
+  font-size: 16px;
+}
+
+.text_40 {
+  font-size: 40px;
 }
 
 @keyframes reversal {
